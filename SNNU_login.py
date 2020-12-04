@@ -13,7 +13,7 @@ def Get_cookie(url):
     # 通过CookieHandler创建opener
     opener = request.build_opener(handler)
     # 此处的open方法打开网页
-    response = opener.open(post_addr)
+    response = opener.open(url)
     # 打印cookie信息
     for item in cookie:
         if item.name == 'JSESSIONID':
@@ -59,8 +59,8 @@ def Login(account, password):
     return 'OK'
 
 # 输入自己的学号以及密码
-account = '********'
-password = '**********'
+account = '*****'
+password = '*****'
 
 result = Login(account, password)
 print(result)
