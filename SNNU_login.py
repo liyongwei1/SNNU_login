@@ -29,7 +29,6 @@ def Login(account, password):
     #获取cookie
     cookie = Get_cookie(post_addr)
 
-
     post_data = {
             'sourceurl': 'http://www.gstatic.com/generate_204',
             'account': account,
@@ -41,14 +40,10 @@ def Login(account, password):
 
     return 'OK'
 
+
 # 输入自己的学号以及密码
 account = '*****'
 password = '*****'
 
 result = Login(account, password)
 print(result)
-
-
-
-
-
